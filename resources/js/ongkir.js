@@ -3,7 +3,7 @@ $('select[name="origin_province"]').on("change", function () {
 
     if (provinceId) {
         jQuery.ajax({
-            url: "/api/province" + provinceId + "/cities",
+            url: "/api/province/" + provinceId + "/cities",
             type: "GET",
             dataType: "JSON",
             success: function (data) {
